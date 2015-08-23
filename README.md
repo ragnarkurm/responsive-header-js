@@ -27,25 +27,27 @@ Basic HTML structure
 How it works
 ========================
 
-Container has to be initially explicitly hidden
-and widgets will be inline-blocks temporarily
-so that widgets widths could be measured while not visible.
-
-Then container style will be removed and all widgets hidden.
-Then container will assume its desired width.
-Then algorithm knows desired width.
-Then algorithm will show onme widget
-from each common parent element.
+* Container has to be initially explicitly hidden and widgets will be inline-blocks temporarily so that widgets widths could be measured while not visible.
+* Then container style will be removed and all widgets hidden.
+* Then container will assume its desired width.
+* Then algorithm knows desired width.
+* Then algorithm will show onme widget from each common parent element.
 
 Installation
 ========================
 
-Download jQuery
-Download the responsive-header
-Download throttle/debounce (to prevent too frequent firing during window resizing).
-https://github.com/cowboy/jquery-throttle-debounce
+* Download [jQuery](https://jquery.com/download/)
+* Download [throttle/debounce](https://github.com/cowboy/jquery-throttle-debounce)
+* Download [responsive-header-js](https://github.com/ragnarkurm/responsive-header-js)
 
-load jQuery
-load throttle/debounde
-load responsive-header
-responsiveHeader('.container', '.container .widget');
+* load jQuery
+* load throttle/debounde
+* load responsive-header
+* execute `responsiveHeader('.container', '.container .widget')`
+
+API
+========================
+
+There is only on public function `responsiveHeader()`. It has two arguments:
+1. Container selector
+2. Widgets selector
