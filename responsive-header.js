@@ -17,7 +17,7 @@ function responsiveHeaderCombine(collections, size) {
     var combinations_new = [];
     for (var wid in collections[cid]) {
       for (var ci in combinations) {
-        var n = $.extend(true, {}, combinations[ci]); // clone dict
+        var n = jQuery.extend(true, {}, combinations[ci]); // clone dict
         n['size'] += collections[cid][wid];
         n['widgets'][wid] = true;
         combinations_new.push(n);
@@ -58,7 +58,7 @@ function responsiveHeader2(conf) {
 
   // make widgets visible or hidden
   conf['widgets'].each(function(i) {
-     var widget = $(this);
+     var widget = jQuery(this);
      var wid = widget.attr('id');
      if (elected[wid]) {
        widget.show();
@@ -78,7 +78,7 @@ function responsiveHeader(container_selector, widgets_selector) {
 
   var id = 1;
   conf['widgets'].each(function(i) {
-      var widget = $(this);
+      var widget = jQuery(this);
       var wid = widget.attr('id');
       // need to have inline-block for width
       // otherwise block will have 100%
@@ -105,6 +105,6 @@ function responsiveHeader(container_selector, widgets_selector) {
   // since they dont generate resize event in the beginning
   action();
   // throttle not to fire too frequently
-  $(window).resize($.throttle(250,action));
+  jQuery(window).resize(jQuery.throttle(250,action));
 
 }
