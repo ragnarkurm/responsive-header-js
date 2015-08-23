@@ -7,7 +7,8 @@ combining shorter or longer versions of widgets.
 Basic HTML structure
 ========================
 
-```<table class="container" style="visibility:hidden"><tr>
+```html
+<table class="container" style="visibility:hidden"><tr>
   <td>
     <div class="widget">...</div>
   </td>
@@ -20,7 +21,8 @@ Basic HTML structure
     <div class="widget">...</div>
     <div class="widget">...</div>
   </td>
-</tr></table>```
+</tr></table>
+```
 
 How it works
 ========================
