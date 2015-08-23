@@ -37,17 +37,18 @@ Installation
 ========================
 
 * Download [jQuery](https://jquery.com/download/)
-* Download [throttle/debounce](https://github.com/cowboy/jquery-throttle-debounce)
+* Download [throttle-debounce](https://github.com/cowboy/jquery-throttle-debounce)
 * Download [responsive-header-js](https://github.com/ragnarkurm/responsive-header-js)
 
 * load jQuery
-* load throttle/debounde
-* load responsive-header
+* load throttle-debounce
+* load responsive-header-js
 * execute `responsiveHeader('.container', '.container .widget')`
 
 API
 ========================
 
 There is only on public function `responsiveHeader()`. It has two arguments:
+
 1. Container selector
 2. Widgets selector
