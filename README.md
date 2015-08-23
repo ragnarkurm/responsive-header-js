@@ -40,10 +40,12 @@ from each common parent element.
 Installation
 ========================
 
-Download the js.
+Download jQuery
+Download the responsive-header
 Download throttle/debounce (to prevent too frequent firing during window resizing).
 https://github.com/cowboy/jquery-throttle-debounce
 
-load throttle/debounde lib
-load responsive-header js
+load jQuery
+load throttle/debounde
+load responsive-header
 responsiveHeader('.container', '.container .widget');
