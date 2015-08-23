@@ -40,7 +40,7 @@ Installation
 * Download [throttle-debounce](https://github.com/cowboy/jquery-throttle-debounce)
 * Download [responsive-header-js](https://github.com/ragnarkurm/responsive-header-js)
 
----
+During runtime:
 
 * load jQuery
 * load throttle-debounce
