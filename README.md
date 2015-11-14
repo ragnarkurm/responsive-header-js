@@ -8,7 +8,7 @@ Basic HTML structure
 ========================
 
 ```html
-<table class="container" style="visibility:hidden"><tr>
+<table class="container" style="visibility:hidden; width: 2000px;"><tr>
   <td>
     <div class="widget">...</div>
   </td>
@@ -27,7 +27,7 @@ Basic HTML structure
 How it works
 ========================
 
-* Container has to be initially explicitly hidden and widgets will be inline-blocks temporarily so that widgets widths could be measured while not visible.
+* Container has to be initially explicitly hidden and widgets will be inline-blocks temporarily so that widgets widths could be measured while not visible. Note that you need to add arbitrary large width so that elements are rendered in expanded form otherwise elements will be rendered as squeezed and header js compaction algorithm will produce a mess.
 * Then container style will be removed and all widgets hidden.
 * Then container will assume its desired width.
 * Then algorithm knows desired width.
